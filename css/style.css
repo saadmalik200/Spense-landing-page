@@ -228,6 +228,7 @@ button {
 
 .last-section {
   margin: 5rem 0;
+  margin-bottom: 0;
 }
 
 .last-article1 {
@@ -262,3 +263,41 @@ button {
 /****************************/
 /* FOOTER */
 /****************************/
+
+footer {
+  background-color: black;
+  color: rgb(158, 154, 154);
+  padding-bottom: 3rem;
+}
+
+footer h3,
+h4 {
+  color: white;
+
+  margin: 1.5rem 0;
+}
+
+.footer-top-section {
+  margin: 2rem;
+  padding-top: 6rem;
+  margin-top: 0;
+}
+
+.footer-top-section p {
+  line-height: 2.5rem;
+}
+
+.footer-last-section article {
+  width: 35%;
+}
+
+.footer-last-section {
+  flex-wrap: wrap;
+  margin: 2rem;
+
+  justify-content: space-between;
+}
+
+.footer-last-section p {
+  margin: 1.2rem 0;
+}
