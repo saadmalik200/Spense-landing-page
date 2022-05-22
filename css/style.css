@@ -28,8 +28,6 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Cabin", sans-serif;
-  /* width: 414px; */
-  /* margin: 10rem auto; */
   border: 2px solid black;
 }
 .padding-body {
@@ -52,10 +50,12 @@ header {
 }
 .header-top {
   background-color: black;
-  height: 12rem;
+  /* height: 12rem; */
   color: white;
   font-size: 1.8rem;
   line-height: 3rem;
+  text-align: center;
+  padding-bottom: 1rem;
 }
 .header-top p {
   width: 90%;
@@ -84,17 +84,21 @@ header {
 /* NAVIGATION BAR*/
 /*******************/
 
-nav ul {
+.mobileUl {
   height: 8rem;
   justify-content: space-between;
 
   padding: 6rem 2rem 4rem 2rem;
   align-items: center;
 }
-nav ul li {
+.mobileUl li {
   list-style: none;
   font-weight: 700;
   font-size: 2rem;
+}
+
+.tabletUL {
+  display: none;
 }
 
 /****************************/
@@ -103,6 +107,15 @@ nav ul li {
 
 .hero {
   background-color: #f0eeeb;
+}
+
+.hero-article-img {
+  background-image: url(../Spense-Starter-Files/Assets/Hero-Image-Mobile.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* width: 100%; */
+  height: 36rem;
 }
 
 .hero-article-img img {
@@ -130,6 +143,8 @@ nav ul li {
 
 .hero-bold-p {
   margin: 1rem 0;
+  /* resize: both;
+  overflow: scroll; */
 }
 .hero-bold-p p,
 img {
@@ -175,9 +190,13 @@ button {
   width: 31%;
 }
 
-/****************************/
+.center-logo .tablet-logo {
+  display: none;
+}
+
+/**********************/
 /* MIDDLE SECTION */
-/****************************/
+/*********************/
 
 .middle-section {
   margin: 4rem 2rem;
@@ -190,6 +209,12 @@ button {
 }
 
 .middle-img-container {
+  background-image: url(../Spense-Starter-Files/Assets/Phone-Mockup-Mobile.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* width: 100%; */
+  height: 40rem;
   margin: 0;
   padding: 0;
 }
@@ -221,9 +246,9 @@ button {
   font-size: 1.75rem;
 }
 
-/****************************/
+/********************/
 /* LAST SECTION */
-/****************************/
+/*******************/
 
 .last-section {
   margin: 5rem 0;
@@ -259,9 +284,9 @@ button {
   width: 100%;
 }
 
-/****************************/
+/**************/
 /* FOOTER */
-/****************************/
+/*************/
 
 footer {
   background-color: black;
@@ -299,4 +324,98 @@ h4 {
 
 .footer-last-section p {
   margin: 1.2rem 0;
+}
+
+/****************************/
+/*
+/*
+/* MEDIA QUERIES */
+/*
+/*
+/****************************/
+
+/****************************/
+/* TABLET */
+/****************************/
+
+/* 768 px = 48em */
+
+@media screen and (min-width: 48em) {
+  .menu-bar {
+    display: none;
+  }
+
+  .tabletUL {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .padding-body {
+    padding: 4rem;
+  }
+
+  .mobileUl {
+    padding: 6rem 4rem 4rem 4rem;
+  }
+  .hero-article-img {
+    background-image: url(../Spense-Starter-Files/Assets/Hero-Image-Tablet.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 36rem;
+  }
+  .tabletUL li button {
+    padding: 2rem;
+  }
+
+  .hero-article-text h1 {
+    font-size: 6rem;
+    margin-bottom: 1.5rem;
+  }
+  input {
+    width: 25%;
+  }
+  /****************************/
+  /* CENTER LOGO SECTION */
+  /****************************/
+
+  .center-logo .tablet-logo {
+    display: inline;
+  }
+  .center-logo img {
+    width: 18%;
+    height: 3.7rem;
+  }
+
+  .middle-section {
+    margin: 4rem 4rem;
+  }
+  .middle-text-container h2 {
+    width: 60%;
+    font-size: 4rem;
+  }
+  .middle-text-container p {
+    width: 75%;
+  }
+
+  .middle-img-container {
+    background-image: url(../Spense-Starter-Files/Assets/Phone-Mockup-Tablet.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    height: 40rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/****************************/
+/* DESKTOP */
+/****************************/
+
+/* 992 px = 62em */
+
+@media screen and (min-width: 62em) {
 }
