@@ -28,10 +28,9 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Cabin", sans-serif;
-  width: 414px;
-  margin: 10rem auto;
+  /* width: 414px; */
+  /* margin: 10rem auto; */
   border: 2px solid black;
-  /* margin-bottom: 0rem; */
 }
 .padding-body {
   padding: 2rem;
